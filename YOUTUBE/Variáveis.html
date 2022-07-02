@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <script>
-
+        // var - variavel global e posso utilizar em qualquer lugar do código e é visível em todo o código e posso alterar a qualquer momento.
         var name="Josh";
         // Se ainda náo vai trabalhar com a variavel, é recomendado dar o valor a ela de "null", pois já que ela não foi definida, ela não tem valor e não dará erro de indefinido.
         var site=null; // site é uma variável que não foi definida.
@@ -20,12 +20,111 @@
 
         var texto=name+"<br>"+house+"<br>"+curso+(house+num); // Soma de Strings e números na mesma linha, tem que se colocar entre parenteses para conseguir o resultado inteiro.
         
+        // document é um objeto que representa o documento HTML. 
         document.write(texto);
         document.write("<br>"+(int1*int2));
+
+        const PI=3.14; // Constante, não pode ser alterada.
+        document.write("<br>"+PI);
+        document.write("<br>"+Math.PI); // Função math.pi (biblioteca matemática - constante pré definida no sistema) é uma função do javascript que retorna o valor de pi.
+
+        // Variáveis de tipo string.
+        var nome="Josh";
+        var sobrenome="Santos";
+        var nomeCompleto=nome+" "+sobrenome; // Concatenação de strings.
+        document.write("<br>"+nomeCompleto);
+        document.write("<br>"+nomeCompleto.length); // Função length retorna o tamanho da string.
+        document.write("<br>"+nomeCompleto.toUpperCase()); // Função toUpperCase() transforma todas as letras em maiúsculas.
+        document.write("<br>"+nomeCompleto.toLowerCase()); // Função toLowerCase() transforma todas as letras em minúsculas.
+        document.write("<br>"+nomeCompleto.charAt(0)); // Função charAt() retorna a letra que está na posição que foi passada como parâmetro.
+        document.write("<br>"+nomeCompleto.indexOf("S")); // Função indexOf() retorna a posição da letra que foi passada como parâmetro.
+        document.write("<br>"+nomeCompleto.substring(0,3)); // Função substring() retorna uma string que começa na posição que foi passada como parâmetro e vai até a posição que foi passada como segundo parâmetro.
+        document.write("<br>"+nomeCompleto.replace("S","J")); // Função replace() substitui uma string por outra.
+        document.write("<br>"+nomeCompleto.concat(" - ",nomeCompleto.length)); // Função concat() concatena duas strings.
+        document.write("<br>"+nomeCompleto.split(" ")); // Função split() divide uma string em um array.
+        document.write("<br>"+nomeCompleto.trim()); // Função trim() remove os espaços em branco do início e do fim da string.
+        document.write("<br>"+nomeCompleto.charCodeAt(0)); // Função charCodeAt() retorna o código ASCII da letra que foi passada como parâmetro.
+
+        // Variáveis de tipo number.
+        var numero=10;
+        var numero2=20;
+        var numero3=numero+numero2; // Soma de números.
+        document.write("<br>"+numero3);
+        document.write("<br>"+numero3.toString()); // Função toString() converte um número em string.
+        document.write("<br>"+numero3.toFixed(2)); // Função toFixed() arredonda um número para duas casas decimais.
+        document.write("<br>"+numero3.valueOf()); // Função valueOf() retorna o valor numérico da variável.
+        document.write("<br>"+numero3.isNaN()); // Função isNaN() retorna true se o valor for um número e false se não for.
+        document.write("<br>"+numero3.isFinite()); // Função isFinite() retorna true se o valor for um número e false se não for.
+        document.write("<br>"+numero3.isInteger()); // Função isInteger() retorna true se o valor for um número inteiro e false se não for.
+        document.write("<br>"+numero3.isSafeInteger()); // Função isSafeInteger() retorna true se o valor for um número inteiro e false se não for.
+        
+        // Variáveis de tipo boolean.
+        var verdadeiro=true;
+        var falso=false;
+        document.write("<br>"+verdadeiro);
+        document.write("<br>"+falso);
+        document.write("<br>"+verdadeiro.toString()); // Função toString() converte um valor booleano em string.
+        document.write("<br>"+verdadeiro.valueOf()); // Função valueOf() retorna o valor booleano da variável.
+        document.write("<br>"+verdadeiro.toString()+falso.toString()); // Função toString() converte um valor booleano em string.
+        document.write("<br>"+verdadeiro.valueOf()+falso.valueOf()); // Função valueOf() retorna o valor booleano da variável.
+
+        // Variáveis de tipo undefined.
+        var undefined; // Variável não definida.
+        document.write("<br>"+undefined);
+        document.write("<br>"+undefined.toString()); // Função toString() converte um valor undefined em string.
+        document.write("<br>"+undefined.valueOf()); // Função valueOf() retorna o valor undefined da variável.
+
+        // Variáveis de tipo null.
+        var nula=null; // Variável nula.
+        document.write("<br>"+null);
+        document.write("<br>"+nula.toString()); // Função toString() converte um valor null em string.
+        document.write("<br>"+nula.valueOf()); // Função valueOf() retorna o valor null da variável.
+
+        // Variáveis de tipo object.
+        var objeto={}; // Objeto vazio.
+        var objeto2={nome:"Josh",sobrenome:"Santos"}; // Objeto com propriedades.
+        document.write("<br>"+objeto);
+        document.write("<br>"+objeto2);
+        document.write("<br>"+objeto2.nome); // Acesso a propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toUpperCase()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.length); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.charAt(0)); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.indexOf("S")); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.substring(0,3)); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.replace("S","J")); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.concat(" - ",objeto2.nome.length)); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.split(" ")); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.trim()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.charCodeAt(0)); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.isNaN()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.isFinite()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.isInteger()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.isSafeInteger()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.valueOf()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toString()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toFixed(2)); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toExponential(2)); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toPrecision(2)); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toLocaleString()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toLocaleDateString()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toLocaleTimeString()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toUTCString()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toISOString()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toJSON()); // Acesso a função da propriedade do objeto.
+        document.write("<br>"+objeto2.nome.toSource()); // Acesso a função da propriedade do objeto.
+
+        
+
+       
+
+        
+
+
         
 
         /* Outra maneira de escrever: 
         document.write(name+"<br>"+house+"<br>"+curso);*/
+
 
 
     </script>
