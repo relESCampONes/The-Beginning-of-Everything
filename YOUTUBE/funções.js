@@ -28,32 +28,27 @@ $(document).ready(function () {
         alert("Para melhor visualização do site, utilize o navegador Google Chrome.");
     }
 }
+);
 
-// Função para abrir o menu lateral
-function abrirMenu() {
-    // Se o menu estiver fechado, exibe o menu
-    if ($("#menu").css("display") == "none") {
-        $("#menu").css("display", "block");
+/*
+ Função para abrir o menu lateral
+ function abrirMenu() {
+ Se o menu estiver fechado, exibe o menu
+     if ($("#menu").css("display") == "none") {
     }
-    // Se o menu estiver aberto, esconde o menu
-    else {
+Se o menu estiver aberto, esconde o menu
+     else {
 
         $("#menu").css("display", "none");
     }
-}
 
-// Funções 
-function abrirMenu1() {
-    // Se o menu estiver fechado, exibe o menu
-    if ($("#menu").css("display") == "none") {
-        $("#menu").css("display", "block"); // Exibe o menu
-        $("#menu").css("left", "0"); // Posiciona o menu na esquerda
-        $("#menu").css("top", "0"); // Posiciona o menu na parte superior
-        $("#menu").css("width", "100%"); // Define o tamanho do menu
-        $("#menu").css("height", "100%"); // Define o tamanho do menu
-        $("#menu").css("background-color", "rgba(0,0,0,0.5)"); // Define a cor de fundo do menu
-        $("#menu").css("z-index", "1"); // Define o z-index do menu
-        $("#menu").css("position", "fixed"); // Define a posição do menu
-        $("#menu").css("transition", "left 0.5s"); // Define a transição do menu
-    }
-}
+
+Funções 
+ Se o menu estiver fechado, exibe o menu
+     $("#menu").css("display", "block"); // Exibe o menu
+      $("#menu").css("top", "0"); // Posiciona o menu na parte superior
+       $("#menu").css("width", "100%"); // Define o tamanho do menu
+      $("#menu").css("height", "100%"); // Define o tamanho do menu
+      $("#menu").css("background-color", "rgba(0,0,0,0.5)"); // Define a cor de fundo do menu
+        $("#menu").css("transition", "left 0.5s"); // Define a transição do menu para a esquerda
+   } */
