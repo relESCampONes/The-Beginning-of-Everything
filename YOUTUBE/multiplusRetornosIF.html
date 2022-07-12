@@ -10,27 +10,76 @@
         var nota=prompt("Digite sua nota","Nota");
         var res;
 
-        if(nota>=95){
-            res="Aprovado com louvor";
-        }else if(nota>=60) {
+        // Método simples de condicional
+        // if(nota>=95){
+        //     res="Aprovado com louvor";
+        // }else if(nota>=60) {
+        //     res="Aprovado";
+        // }else if(nota>=40) {
+        //     res="Recuperação";
+        // }else{
+        //     res="Reprovado";
+        // }
+        
+
+
+
+
+        // Condicionais Aninhadas
+        // if(nota>=60){
+        //     if(nota>=95){
+        //     res="Aprovado com louvor";
+        // }   else {
+        //     res="Aprovado";
+        // }            
+           
+        // }
+        // else{
+        //     if(nota>=20){
+        //     res="Reprovado";
+        // }   else{
+        //     res="Reprovado mesmo";
+        // }       
+        // }
+
+
+
+
+        // Método resumido
+        if(nota>=60){
+            res="Aprovado"
+            if(nota>=95){
+            res=+" com louvor";
+        }   else {
             res="Aprovado";
-        }else if(nota>=40) {
-            res="Recuperação";
-        }else{
+        }            
+           
+        }
+        else{
+            if(nota>=20){
             res="Reprovado";
+        }   else{
+            res="Reprovado mesmo";
+        }       
         }
 
-        document.write(res);
+
+
+
+
+
+
+
+
+
+
+        alert("Muito bem você foi : "+res.toUpperCase());        
+        document.write("Muito bem você foi : "+res.toUpperCase());
         
-        
-        document.write(res);
 
     </script>
 </head>
 <body>
-    <p>
-        pa
 
-    </p>
 </body>
 </html>
